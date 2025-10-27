@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function About() {
     return (
         <section className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-white px-6">
             <div>

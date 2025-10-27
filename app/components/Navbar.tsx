@@ -8,6 +8,7 @@ export default function Navbar() {
             <nav className="flex flex-col sm:flex-row items-center justify-center sm:space-x-6 space-y-2 sm:space-y-0">
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
+                <Link href="/products">Products</Link>
             </nav>
         </div>
     )
