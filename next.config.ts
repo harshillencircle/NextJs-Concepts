@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "placehold.co",
         pathname: "/**", // allow all paths
       },
+      {
+        protocol: "https",
+        hostname: "fakestoreapi.com",
+        pathname: "/**",
+      },
     ],
   },
 };
