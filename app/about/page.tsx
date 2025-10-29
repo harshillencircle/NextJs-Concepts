@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-white px-6">
+        <section className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-white p-6">
             <div>
                 <h1 className="text-2xl sm:text-6xl font-extrabold mb-4">
                     About <span className="text-blue-500">My Next.js Site</span>
