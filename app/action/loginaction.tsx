@@ -22,8 +22,7 @@ export async function LoginAction(formdata: FormData) {
 
     // if (email === "admin@gmail.com" && password === "123456") {
         const cookie = await cookies();
-        cookie.set("user", JSON.stringify({ username, email, password }), { 
-            httpOnly: true,
+        cookie.set("user", JSON.stringify({ username, email, password }), {
             path: '/',
         });
 
