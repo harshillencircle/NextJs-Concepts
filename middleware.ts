@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from 'next/server'
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const user = request.cookies.get('user')?.value;
   if (!user) {
     const loginUrl = new URL('/login', request.url);
