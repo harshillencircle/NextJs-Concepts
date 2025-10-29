@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { products } from "../data/products";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Products",
+    description: "This Is Products page"
+};
 
 export default function Products() {
     return (

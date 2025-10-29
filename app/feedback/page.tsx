@@ -1,5 +1,11 @@
+import { Metadata } from "next";
 import { FeedbackAction } from "../action/feedbackaction";
 import { feedbackStore } from "../data/feedbacks";
+
+export const metadata: Metadata = {
+    title: "Feedback Page",
+    description: "This Is Feedback page"
+};
 
 export default async function FeedbackForm() {
     const feedbackList = feedbackStore;

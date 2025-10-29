@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import { LoginAction } from "../action/loginaction";
+
+export const metadata: Metadata = {
+    title: "Login Page",
+    description: "This Is Login page"
+};
 
 export default function LoginPage() {
     return (

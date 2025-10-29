@@ -1,7 +1,13 @@
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Dashboard Page",
+  description: "This Is Dashboard page"
+};
 
 export default async function Dashboard() {
   const store = await cookies();
