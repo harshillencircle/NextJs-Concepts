@@ -21,12 +21,15 @@ export async function LoginAction(formdata: FormData) {
     }
 
     // if (email === "admin@gmail.com" && password === "123456") {
-        const cookie = await cookies();
-        cookie.set("user", JSON.stringify({ username, email, password }), {
-            path: '/',
-        });
+    const cookie = await cookies();
+    cookie.set("user", JSON.stringify({ username, email, password }), {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'lax',
+        path: '/',
+    });
 
-        redirect('/dashboard');
+    redirect('/dashboard');
     // }
     // else {
     //     throw new Error("Invalid Credentials !!");
