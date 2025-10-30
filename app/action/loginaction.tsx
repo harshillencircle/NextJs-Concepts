@@ -20,18 +20,17 @@ export async function LoginAction(formdata: FormData) {
         throw new Error("Password must be at least 6 characters.");
     }
 
-    // if (email === "admin@gmail.com" && password === "123456") {
+    if (email === "admin@gmail.com" && password === "123456") {
     const cookie = await cookies();
-    cookie.set("user", JSON.stringify({ username, email, password }), {
+    cookie.set("user", JSON.stringify({ username, email }), {
         httpOnly: true,
         secure: true,
-        sameSite: 'lax',
         path: '/',
     });
 
     redirect('/dashboard');
-    // }
-    // else {
-    //     throw new Error("Invalid Credentials !!");
-    // }
+    }
+    else {
+        throw new Error("Invalid Credentials !!");
+    }
 }

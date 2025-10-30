@@ -20,7 +20,6 @@ export default async function Dashboard() {
         <div className="bg-white p-8 rounded-lg shadow-md text-center">
           <h2 className={`text-2xl font-semibold mb-2 ${inter.className}`}>Welcome, {user.username} </h2>
           <p className="text-gray-700 mb-4">{user.email}</p>
-          <p className="text-gray-700 mb-4">{user.password}</p>
           <form action="/api/logout" method="post">
             <button
               type="submit"
